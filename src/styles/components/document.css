@@ -1,0 +1,66 @@
+@media screen and (min-width: 959px) {
+
+    .document-table {
+        position: relative;
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-collapse: collapse;
+    }
+
+    .document-table thead {
+        position: sticky;
+        width: 100%;
+        height:  64px;
+    }
+    .document-table thead tr,
+    .document-table tbody tr {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 32px;
+    }
+    .document-table thead td,
+    .document-table tbody td {
+        position: relative;
+        width: 240px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .document-table tbody {
+        position: relative;
+        width: 100%;
+        height: calc(100% - 64px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .document-table td:nth-child(4){
+        position: relative;
+        width: calc(100% - 240px * 3);
+    }
+
+    .document-open,
+    .document-create {
+        position: absolute;
+        right: 8px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 1px 1px #d0d0d0;
+        width: 72px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        color: #565656;
+        font-size: 12px;
+    }
+    
+}

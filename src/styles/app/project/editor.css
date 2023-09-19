@@ -1,0 +1,63 @@
+@media screen and (min-width: 959px) {
+    .editor {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .editor .header {
+        position: relative;
+        width: 95%;
+        height: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .editor .header .left-items {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 360px;
+        height: 32px;
+    }
+
+    .editor .header .right-items {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 360px;
+        height: 32px;
+        justify-content: right;
+    }
+
+
+    .editor .document-name {
+        position: relative;
+        border: none;
+        border-radius:0;
+        border-bottom: solid 1px #d0d0d0;
+        outline: 0;
+        width: 320px;
+    }
+
+
+
+    .editor .header .note-commit {
+        position: relative;
+        height: 24px;
+        margin: 1px;
+        border: none;
+        box-shadow: 0 0 1px 1px #d0d0d0;
+        border-radius: 5px;
+        font-size: 12px;
+        margin-right: 8px;
+    }
+
+    .editor .body {
+        position: relative;
+        width: 95%;
+        height: calc(100% - 40px);
+    }
+}

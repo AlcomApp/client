@@ -1,0 +1,55 @@
+@media screen and (min-width: 959px){
+    .modal-background {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal {
+        position: relative;
+        min-width: 64px;
+        min-height: 64px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .modal .header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+
+    .modal .header .close {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        color: #676767;
+    }
+
+    .modal .header .close svg {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    .modal .body {
+        position: relative;
+        width: 100%;
+        height: calc(100% - 40px);
+    }
+}

@@ -1,0 +1,148 @@
+@media screen and (min-width: 959px) {
+    .timeline-table {
+        position: relative;
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-collapse: collapse;
+    }
+
+    .timeline-table thead {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 64px;
+    }
+    .timeline-table tbody {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .timeline-table thead tr {
+        position: relative;
+        width: 100%;
+        height:32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-table .title {
+        font-size:  12px;
+        color: #565656;
+    }
+    .timeline-table .label {
+        font-size: 12px;
+        color: #565656;
+    }
+    .timeline-table td:nth-child(1){
+        position: relative;
+        width: 240px;
+        height: 100%;
+    }
+    .timeline-table tbody td {
+        border-right: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .timeline-table tbody td:nth-last-child(1){
+        position: relative;
+        border-right:none;
+        flex-shrink: 0;
+    }
+    .timeline-table thead td:nth-child(2),
+    .timeline-table thead td:nth-child(3),
+    .timeline-table thead td:nth-child(4),
+    .timeline-table thead td:nth-child(5),
+    .timeline-table thead td:nth-child(6),
+    .timeline-table thead td:nth-child(7),
+    .timeline-table thead td:nth-child(8) {
+        position: relative;
+        width:calc((100% - 240px) / 7);
+    }
+    .timeline-table tbody tr {
+        position: relative;
+        min-height: 32px;
+        flex-shrink: 0;
+        height: auto!important;
+    }
+
+    .timeline-table tbody td:nth-child(2){
+        position: relative;
+        width:calc(100% - 240px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .timeline-table tbody .task-row {
+        position: relative;
+        width: 100%;
+        height:24px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        padding: 4px 0;
+    }
+
+
+    .timeline-table tbody .task-brank {
+        position: relative;
+        width:calc((100% - 240px) / 7);
+        height: 24px;
+        flex-shrink: 0;
+    }
+    .timeline-table .task-bar {
+        position: relative;
+        height: 24px;
+        min-width: 112px;
+        border-radius: 5px;
+        background-color: #94b831;
+        flex-shrink: 0;
+        color: #fff;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .timeline-table .task-name {
+        margin-left: 8px;
+    }
+
+    .timeline-table .widget {
+        position: absolute!important;
+        right: 5%;
+    }
+
+    .timeline-table .widget button {
+        border: none;
+        box-shadow: 0 0 1px 1px #d0d0d0;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin: 0 4px;
+        color: #565656;
+    }
+    .task-create {
+        position: absolute;
+        right: 8px;
+        width: 72px;
+        height: 24px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 1px 1px #d0d0d0;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        font-size: 12px;
+        color: #565656;
+    }
+
+}

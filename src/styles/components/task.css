@@ -1,0 +1,182 @@
+@media screen and (min-width: 959px){
+    .task-component {
+        position: relative;
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task-component .header {
+        position: relative;
+        width: 100%;
+        height:64px;
+        border-bottom: solid 1px #d0d0d0;
+    }
+    .task-component .header .create-sheet {
+        position: absolute;
+        width: 144px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        right: 0;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0 0 1px 1px #d0d0d0;
+        color: #565656;
+    }
+
+  
+
+
+    .task-component .body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: row!important;
+        align-items: flex-start!important;
+        justify-content: left!important;
+
+    }
+    .task-component .sheet {
+        position: relative;
+        width: 240px;
+        min-height: 240px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 24px;
+        margin-top: 24px;
+    }
+
+    .task-component .sheet .create-task {
+        position: sticky;
+        width: 216px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        border: none;
+        border-radius:5px;
+        margin: 0 auto;
+        background-color: transparent;
+        color: #565656;
+    }
+    .task-component .sheet .change-edit {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius:5px;
+    }
+    .task-component .sheet .change-edit svg {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+    }
+
+
+    .task-component .sheet .title {
+        color: #565656;
+        font-size:  12px;
+        font-weight: bold;
+        margin: 0;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .task-component .sheet .delete-sheet {
+        position: absolute;
+        right: 4px;
+        border: none;
+        width: 16px;
+        height: 16px;
+        color: #565656;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .task-component .sheet .delete-sheet svg {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+    }
+
+    .task-component .sheet .container {
+        position: relative;
+        width: 100%;
+        min-height: 160px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task-component .task {
+        position: relative;
+        width: 224px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #fafafa;
+        margin-top: 8px;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;  
+        box-shadow: 0 0 1px 1px #d0d0d0;
+        cursor: grab;
+    }
+
+    .task-component .task:active {
+        cursor: grabbing;
+        visibility: hidden;
+        transition: visibility linear 0.2s;
+        background-color: #f9f9f9;
+        opacity: 1;
+    }
+    .task .name {
+        margin: 0;
+        font-size: 14px;
+        color: #565656;
+        width: 95%;
+    }
+    .task .icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .task .open {
+        position: relative;
+        right: 2px;
+        border: none;
+        border-radius:5px;
+        box-shadow: 0 0 1px 1px #d0d0d0;
+        height: 24px;
+        font-size:12px;
+        display: flex;
+        align-items: center;
+        color: #565656;
+        background-color: #fff;
+
+    }
+
+}

@@ -1,0 +1,51 @@
+@media screen and (min-width: 959px){
+    .login-view {
+        position: relative;
+        width: 600px;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-view h2 {
+        color: #565656;
+        font-size:  36px;
+        width: 320px;
+    }
+    .login-view .widget {
+        position: relative;
+        width: 320px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-view .widget .login-id,
+      .login-view .widget .password{
+        position: relative;
+        width: 100%;
+        margin-top: 24px;
+    }
+  
+    .login-view .widget input {
+        position: relative;
+        width: 100%;
+        border: none;
+        border: solid 1px #d0d0d0;
+        border-radius: 5px;
+        height: 32px
+    }
+    .login-view .login-button {
+        width: 240px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: #94b831;
+        color: #fff;
+        margin-top: 24px;
+    }
+}

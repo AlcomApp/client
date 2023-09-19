@@ -1,0 +1,114 @@
+@media screen and (min-width: 959px){
+    .editor-component {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .editor-component .widget-area {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .editor-component .widget-area .square-button {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 5px;
+        background-color: #fff;
+        border: solid 1px #d0d0d0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #676767;
+        margin-right: 4px;
+    }
+
+    .editor-component .text-area {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .editor-component .header-block {
+        font-weight: bold;
+        color: rgb(64, 62, 137)
+    }
+
+
+
+    
+    
+
+
+    .preview-component {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        color: #676767;
+        font-size: 12px;
+    }
+
+    .preview-component h1{
+        font-size: 32px;
+    }
+    .preview-component h2{
+        font-size: 24px
+    }
+    .preview-component h3{
+        font-size:16px;
+    }
+    .preview-component hr {
+        color: #d0d0d0;
+        background-color: #d0d0d0;
+        border-color: #d0d0d0;
+        height: 1px;
+        border: none;
+    }
+
+    .preview-component code {
+        position: relative;
+        font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace!important;
+        background-color: #f0f0f0;
+        height: 24px;
+        font-size: 12px;
+        display: inline-block;
+        line-height: 24px;
+        border-radius: 5px;
+        padding: 0 8px;
+    }
+    .preview-component pre {
+        background-color: transparent;
+        border:  solid 1px #d0d0d0;
+        border-radius: 5px;
+    }
+    .preview-component p {
+        font-size: 14px;
+    }
+
+    .preview-component pre div {
+        background-color: transparent!important;
+    }
+    .preview-component pre code {
+        background-color: transparent!important;
+        color:inherit
+    }
+
+    .preview-component blockquote {
+        border-left: 3px solid #d0d0d0;
+        margin-left: 8px;
+    }
+}
